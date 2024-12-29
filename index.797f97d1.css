@@ -1,0 +1,121 @@
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  width: 100vw;
+  min-height: 100svh;
+  overflow-y: scroll;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container], [data-scroll-direction="horizontal"] [data-scroll-section] {
+  white-space: nowrap;
+}
+
+.c-scrollbar {
+  z-index: 99;
+  transform-origin: 100%;
+  width: 11px;
+  height: 100dvh;
+  transition: transform .3s;
+  top: 0;
+  right: 0;
+}
+
+.c-scrollbar:hover {
+  transform: scaleX(1.5);
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar, [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+  transform: scaleY(1);
+}
+
+.c-scrollbar_thumb {
+  cursor: grab;
+  background-color: #f4f2ed;
+  width: 4px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: grabbing;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+  right: auto;
+}
+
+[data-scroll-container] {
+  overflow: hidden !important;
+}
+
+.cursor {
+  z-index: 100;
+  contain: layout style size;
+  pointer-events: none;
+  background: #f24a11;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: fixed;
+  top: -6px;
+  left: -6px;
+  transform: scale(.2);
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.cursor-expand {
+  transform-origin: 0, 0;
+  z-index: 100;
+  contain: layout style size;
+  pointer-events: none;
+  background: #f24a11;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  top: -18px;
+  left: -18px;
+  transform: scale(0);
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.cursor-expand:before {
+  content: "";
+  background: #fff;
+  width: 20px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 23.5px;
+  left: 14px;
+  transform: scale(.8);
+}
+
+.cursor-expand:after {
+  content: "";
+  background: #fff;
+  width: 1px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 23.5px;
+  transform: scale(.8);
+}
+
+.hero-inner {
+  text-decoration: none;
+}
+/*# sourceMappingURL=index.797f97d1.css.map */
