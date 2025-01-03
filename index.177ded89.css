@@ -38,19 +38,6 @@
   display: flex;
 }
 
-.photo-profil {
-  float: left;
-  filter: drop-shadow(0 0 10px #dcdcdc1a);
-  flex-wrap: wrap;
-  place-content: center;
-  align-items: baseline;
-  width: 100%;
-  max-width: 75px;
-  margin-left: .1rem;
-  margin-right: .5rem;
-  display: flex;
-}
-
 .fw-bold {
   color: #212529;
   font-weight: 800;
