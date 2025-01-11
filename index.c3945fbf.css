@@ -1141,19 +1141,26 @@ article {
   top: -30px;
 }
 
-.contact_2:after {
+.hover-contact-underline:after {
   content: "";
-  background-color: #586266;
-  width: 0%;
-  height: .5px;
-  transition: all .15s ease-out;
-  display: block;
+  opacity: 0;
+  background-image: linear-gradient(#cf4721, #d82d37);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-origin: border-box;
+  width: 100%;
+  height: 2px;
+  transition: background-size .2s cubic-bezier(.45, .34, .65, .96), opacity .5s ease-out;
+  display: inline-block;
   position: absolute;
-  top: 23px;
+  bottom: 1rem;
 }
 
-.contact_2:hover, .contact_2:hover:after {
-  width: 100%;
+.hover-contact-underline:focus, .hover-contact-underline:hover:after {
+  opacity: 1;
+  background-position: 100% 100%;
+  background-size: 100% 1.5px;
 }
 
 @media screen and (width <= 424px) {

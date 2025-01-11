@@ -17,7 +17,7 @@
   bottom: 0;
   overflow: hidden;
   scale: 1;
-  box-shadow: 0 0 16px #25131721, 0 0 10px #2e151a2e, 0 0 3px #361c211f;
+  box-shadow: 0 0 16px #b2a7a921, 0 0 10px #6c66672e, 0 0 3px #cebfc21f;
 }
 
 .prize:after {
@@ -31,17 +31,51 @@
 }
 
 .prize:hover {
-  scale: 1.003;
+  right: 0;
 }
 
-.prize:hover:after {
-  background: linear-gradient(210deg, #0000 0%, #ede9e720 100%);
-}
-
-@media screen and (width <= 424px) {
+@media screen and (width <= 425px) {
   .prize {
-    min-width: 80px;
-    margin: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    min-width: 55px;
+    margin: 1rem 1rem 1rem 0;
+    bottom: 34lvh;
+  }
+}
+
+@media screen and (width >= 426px) and (width <= 768px) {
+  .prize {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    min-width: 55px;
+    margin: 1rem 0 1rem 1rem;
+    bottom: 71lvh;
+    right: 0;
+  }
+}
+
+@media screen and (width >= 769px) {
+  .prize {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    min-width: 90px;
+    max-width: 125px;
+    margin: 1rem 0 1rem 1rem;
+    bottom: 71lvh;
+    right: 0;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .prize {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    min-width: 90px;
+    max-width: 125px;
+    margin: 1rem 0 1rem 1rem;
+    bottom: 30lvh;
+    right: -.5rem;
   }
 }
 /*# sourceMappingURL=index.7f6abcd7.css.map */

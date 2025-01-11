@@ -78,7 +78,7 @@
   display: flex;
   position: absolute;
   bottom: 20px;
-  overflow: scroll hidden;
+  overflow: hidden;
   transform: translate(8px, 8px);
   box-shadow: inset 0 0 1rem #e2dedb;
 }
@@ -291,10 +291,6 @@
     margin-left: 8px;
     margin-right: 8px;
   }
-
-  .btn_share {
-    overflow: hidden;
-  }
 }
 
 @media screen and (width >= 426px) and (width <= 767px) {
@@ -306,7 +302,6 @@
   .btn_share {
     margin-left: 1rem;
     padding-right: 1rem;
-    overflow: scroll hidden;
   }
 }
 
@@ -318,7 +313,6 @@
     padding-left: 20vw;
     padding-right: 20vw;
     display: flex;
-    overflow: scroll hidden;
   }
 }
 
@@ -330,7 +324,6 @@
     padding-left: 30vw;
     padding-right: 30vw;
     display: flex;
-    overflow: hidden;
   }
 }
 
@@ -342,7 +335,6 @@
     padding-left: 50vw;
     padding-right: 50vw;
     display: flex;
-    overflow: hidden;
   }
 }
 
