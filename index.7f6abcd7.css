@@ -30,10 +30,6 @@
   inset: 0;
 }
 
-.prize:hover {
-  right: 0;
-}
-
 @media screen and (width <= 425px) {
   .prize {
     border-top-left-radius: 0;
@@ -76,6 +72,10 @@
     margin: 1rem 0 1rem 1rem;
     bottom: 30lvh;
     right: -.5rem;
+  }
+
+  .prize:hover {
+    right: 0;
   }
 }
 /*# sourceMappingURL=index.7f6abcd7.css.map */
