@@ -1322,8 +1322,17 @@ article {
   }
 
   .credits {
+    display: true;
+    flex-direction: column;
     flex: 1;
-    padding: 1rem 2rem 2rem;
+    align-items: center;
+    padding: 1rem 2rem 0;
+  }
+
+  .contact_mobile {
+    color: #9bc8d8;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 }
 
